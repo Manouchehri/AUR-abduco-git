@@ -1,15 +1,17 @@
 pkgbase = abduco-git
-	pkgdesc = A session management and attach/detach functionality (to use together with dvtm(1)).
-	pkgver = 0.r74.28ef145
+	pkgdesc = A session management and attach/detach functionality (to use together with dvtm(1).
+	pkgver = v0.4.r9.g57e7acb
 	pkgrel = 1
-	url = http://www.brain-dump.org/projects/abduco/
-	arch = i686
-	arch = x86_64
+	url = https://github.com/martanne/abduco
+	install = message.install
+	arch = any
 	license = BSD
 	makedepends = git
+	optdepends = dvtm: Dynamic virtual terminal manager.
+	provides = abduco
 	conflicts = abduco
-	source = abduco-git::git://repo.or.cz/abduco.git
-	md5sums = SKIP
+	source = git://github.com/martanne/abduco.git#branch=master
+	sha512sums = SKIP
 
 pkgname = abduco-git
 

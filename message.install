@@ -1,0 +1,15 @@
+_warning() {
+  printf "\e[1;31mWarning: \e[0m"
+  printf "If you do not have dvtm installed, you must set abduco to run a different program by default. Example:\n"
+  printf "abduco -c session_name bash\n"
+}
+
+post_install() {
+  _warning
+}
+
+post_upgrade() {
+  _warning
+}
+
+# vim:set sw=2 sts=2 et:
